@@ -23,15 +23,35 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## プロジェクト作成コマンド
 
+```
 >composer create-project laravel/laravel todo-app --prefer-dist
+```
 
 ## 組み込みサーバ起動
 
+```
 php artisan serve
+```
 
 ↓ 起動される
 
 http://localhost:8000/
+
+## プロジェクトを落としてきて初めにすること
+
+```
+composer install
+```
+ライブラリの一括インストール
+
+## エラー発生１
+
+ production.ERROR: No application encryption key has been specified.
+
+　↑がエラーになった場合以下を実行する
+
+1. .env.example ⇒ .env にコピー ＆ リネームする
+2. php artisan key:generate を実行する
 
 ## Learning Laravel
 
